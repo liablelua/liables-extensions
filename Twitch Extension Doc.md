@@ -1,22 +1,75 @@
-# Use of Twitch Chat blocks
-![image](https://github.com/Tekinical/tekinical.github.io/assets/140775902/631ecf41-19a9-4135-a30e-752ef2449757)
-<br>
-This block will let you use an IFrame that has your chat in it! And the best part is its completely customizable! Change position, fade, etc.!
-<br>
-![image](https://github.com/Tekinical/tekinical.github.io/assets/140775902/4bcef66e-23b4-45f4-b401-2e2d89cbdf85)
-<br>
-This will close the chat IFrame.
-<br>
-![image](https://github.com/Tekinical/tekinical.github.io/assets/140775902/b9e0c18b-8ded-4556-8d34-91f0653aad7f)
-# Use of Overlay blocks
-![image](https://github.com/Tekinical/tekinical.github.io/assets/140775902/e9116359-d29c-4963-a42a-4c7b6c91496e)
-<br>
-These blocks lets you add text and a image!!
-<br>
-![image](https://github.com/Tekinical/tekinical.github.io/assets/140775902/24a1b699-1048-4273-8747-5981e9c8e8c3)
-<br>
-You can remove these elements.
-<br>
-![image](https://github.com/Tekinical/tekinical.github.io/assets/140775902/91f7a948-10f2-4380-a36b-eba7606be1a8)
-# Other blocks
-![image](https://github.com/Tekinical/tekinical.github.io/assets/140775902/71295bd7-136d-406b-9752-042fec17be9d)
+# Twitch
+
+This extension allows easy access to twitch chat and custom overlays!
+
+## Twitch Chat
+
+Show your twitch chat live!
+
+```scratch
+setup chat [xQc] chat fade enabled [30] show bots <true :: #772CE8> prevent clipping <false :: #772CE8> width (1) height (1) position [static v] :: #772CE8
+```
+
+Setup your twitch chat! You can customize your chat fade, you can choose if you want bots or to prevent clipping (if you're channel is big DON'T TURN ON PREVENT CLIPPING!!) width and height 1 is 50% (regular 50% doesn't work for some reason) and you change which mode the position is in, based on CSS class "position."
+
+```scratch
+close chat :: #772CE8
+```
+
+Makes chat disappear/uncast from the screen.
+
+## Overlays
+
+Epic overlays for your twitch stream!
+
+```scratch
+create text overlay with text [hi chat] with italic <false :: #772CE8> with bold <false :: #772CE8> with size (20) with font [Sans Serif v] :: #772CE8
+```
+
+Creates a text overlay with any selected text, you can customize its Font Weight and Size, you can also load in a custom font by loading it into the Costume Editor!
+
+```scratch
+create image overlay with image [https://tekinical.github.io/twitchURI.png] with width (50) with height (50) with position [static v] is bottom <true :: #772CE8> is top <false :: #772CE8> :: #772CE8
+```
+
+Creates a image overlay with any image from any link, with width and height! You can customize the position like with chat and change if its on the bottom or top! (Left and right may become an option in the future!)
+
+```scratch
+close chat :: #772CE8
+```
+
+Make the text disappear!
+
+```scratch
+close image :: #772CE8
+```
+
+Make the image disappear!
+
+## Utilities
+
+Basic utilities for interacting with the other blocks.
+
+```scratch
+<true :: #772CE8>
+```
+
+Returns true.
+
+```scratch
+<false :: #772CE8>
+```
+
+Returns false.
+
+## Example Code:
+
+```scratch
+when flag clicked
+create text overlay with text [Speedrunning: Appel!] with italic <false :: #772CE8> with bold <false :: #772CE8> with size (20) with font [Pixel v] :: #772CE8
+setup chat [xQc] chat fade enabled [30] show bots <true :: #772CE8> prevent clipping <false :: #772CE8> width (1) height (1) position [static v] :: #772CE8
+```
+
+Result:
+
+![image](https://github.com/Tekinical/extensions/assets/140775902/b14f4dd3-706c-4058-b957-863e9718676e)
