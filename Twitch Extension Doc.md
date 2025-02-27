@@ -2,6 +2,8 @@
 
 This extension allows easy access to twitch chat and custom overlays!
 
+Use with Sheep_maker's Utility extension for True and False blocks. (I was told it was unnecessary to add into my project.)
+
 ## Twitch Chat
 
 Show your twitch chat live!
@@ -45,22 +47,6 @@ close image :: #772CE8
 ```
 
 Make the image disappear!
-
-## Utilities
-
-Basic utilities for interacting with the other blocks.
-
-```scratch
-<true :: #772CE8>
-```
-
-Returns true.
-
-```scratch
-<false :: #772CE8>
-```
-
-Returns false.
 
 ## Example Code:
 
